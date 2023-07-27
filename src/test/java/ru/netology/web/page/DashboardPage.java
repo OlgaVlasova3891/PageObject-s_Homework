@@ -9,10 +9,10 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 
 public class DashboardPage {
-    private final String balanceStart = "balance: ";
-    private final String balanceFinish = " p.";
+    private final String balanceStart = ", баланс: ";
+    private final String balanceFinish = " р.";
     private final SelenideElement heading = $("[data-test-id='dashboard']");
-    private final ElementsCollection cards = $$(".list_item div");
+    private final ElementsCollection cards = $$(".list__item div");
 
     public DashboardPage() {
 
